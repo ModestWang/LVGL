@@ -9,7 +9,7 @@ recent days because the maintainer, or Kenji Mouri are making a new
 Win32 support for the 
 [new LVGL driver architecture](https://github.com/lvgl/lvgl/issues/4011).**
 
-
+![Screenshot](Screenshot.png)
 
 In order to better maintain LVGL for Windows Visual Studio port, I have planned
 to do a big refactoring for this repository. I think it may be the biggest
@@ -148,3 +148,7 @@ will have to update the references on your own. If source files are added or
 removed in the submodules then the visual studio project will likely need
 adjusting. See the commit log for examples of submodule updates and associated
 visual studio file changes to guide you.
+
+## Documents
+
+- [ARM32 Support Removed Notice](Documents/Arm32SupportRemovedNotice.md)

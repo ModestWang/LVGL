@@ -8,6 +8,7 @@
  * DEVELOPER: Mouri_Naruto (Mouri_Naruto AT Outlook.com)
  */
 
+
  /****************************************************************************/
  /*                        INCLUDE & DEFINE                                  */
  /****************************************************************************/
@@ -41,13 +42,15 @@ uint32_t tick_count_callback();
 /****************************************************************************/
 /*                        FUNCTION  REALIZATION                             */
 /****************************************************************************/
-int main() {
+int main()
+{
     /***************************************/
     /*              INITIALIZE		       */
     /***************************************/
     lv_init();
     lv_tick_set_cb(tick_count_callback);
-    if (!single_display_mode_initialization()) {
+    if (!single_display_mode_initialization())
+    {
         return -1;
     }
 
@@ -65,7 +68,7 @@ int main() {
     //button_speed_down();
     //button_speed_up();
     //button_speed_stop();
-    //
+    // 
     //label_show_aircondition();
     //switch_show_1();
     //switch_show_2();
@@ -79,10 +82,12 @@ int main() {
     //
     led_show_room();
 
+
     /***************************************/
     /*              WHILE                  */
     /***************************************/
-    while (!lv_win32_quit_signal) {
+    while (!lv_win32_quit_signal)
+    {
         uint32_t time_till_next = lv_timer_handler();
         Sleep(time_till_next);
     }
@@ -93,19 +98,22 @@ int main() {
 /****************************************************************************/
 /*                        FUNCTION  REALIZATION                             */
 /****************************************************************************/
-bool single_display_mode_initialization() {
+bool single_display_mode_initialization()
+{
     if (!lv_win32_init(
         GetModuleHandleW(NULL),
         SW_SHOW,
         800,
         480,
-        LoadIconW(GetModuleHandleW(NULL), MAKEINTRESOURCE(IDI_LVGL_WINDOWS)))) {
+        LoadIconW(GetModuleHandleW(NULL), MAKEINTRESOURCE(IDI_LVGL_WINDOWS))))
+    {
         return false;
     }
     lv_win32_add_all_input_devices_to_group(NULL);
     return true;
 }
 
-uint32_t tick_count_callback() {
-    return GetTickCount64();
+uint32_t tick_count_callback()
+{
+    return GetTickCount();
 }
