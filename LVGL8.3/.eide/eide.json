@@ -1,0 +1,326 @@
+{
+  "name": "TOUCH",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    "App"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "USER",
+        "files": [
+          {
+            "path": "USER/main.c"
+          },
+          {
+            "path": "USER/stm32f1xx_hal_msp.c"
+          },
+          {
+            "path": "USER/stm32f1xx_it.c"
+          },
+          {
+            "path": "USER/system_stm32f1xx.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "CORE",
+        "files": [
+          {
+            "path": "CORE/cmsis_armcc.h"
+          },
+          {
+            "path": "CORE/cmsis_armclang.h"
+          },
+          {
+            "path": "CORE/cmsis_compiler.h"
+          },
+          {
+            "path": "CORE/core_cm3.h"
+          },
+          {
+            "path": "CORE/startup_stm32f103xe.s"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "HALLIB",
+        "files": [
+          {
+            "path": "HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c"
+          },
+          {
+            "path": "HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c"
+          },
+          {
+            "path": "HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c"
+          },
+          {
+            "path": "HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c"
+          },
+          {
+            "path": "HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c"
+          },
+          {
+            "path": "HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c"
+          },
+          {
+            "path": "HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c"
+          },
+          {
+            "path": "HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c"
+          },
+          {
+            "path": "HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c"
+          },
+          {
+            "path": "HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c"
+          },
+          {
+            "path": "HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c"
+          },
+          {
+            "path": "HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_usart.c"
+          },
+          {
+            "path": "HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_sram.c"
+          },
+          {
+            "path": "HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_fsmc.c"
+          },
+          {
+            "path": "HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "SYSTEM",
+        "files": [
+          {
+            "path": "SYSTEM/delay/delay.c"
+          },
+          {
+            "path": "SYSTEM/sys/sys.c"
+          },
+          {
+            "path": "SYSTEM/usart/usart.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "HARDWARE",
+        "files": [
+          {
+            "path": "HARDWARE/LED/led.c"
+          },
+          {
+            "path": "HARDWARE/LCD/lcd.c"
+          },
+          {
+            "path": "HARDWARE/KEY/key.c"
+          },
+          {
+            "path": "HARDWARE/24CXX/24cxx.c"
+          },
+          {
+            "path": "HARDWARE/IIC/myiic.c"
+          },
+          {
+            "path": "HARDWARE/SPI/spi.c"
+          },
+          {
+            "path": "HARDWARE/TOUCH/ctiic.c"
+          },
+          {
+            "path": "HARDWARE/TOUCH/ft5206.c"
+          },
+          {
+            "path": "HARDWARE/TOUCH/gt9147.c"
+          },
+          {
+            "path": "HARDWARE/TOUCH/ott2001a.c"
+          },
+          {
+            "path": "HARDWARE/TOUCH/touch.c"
+          },
+          {
+            "path": "HARDWARE/W25QXX/w25qxx.c"
+          },
+          {
+            "path": "HARDWARE/TIMER/timer.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "README",
+        "files": [],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": "STM32F103ZE",
+  "packDir": ".pack/Keil/STM32F1xx_DFP.2.3.0",
+  "miscInfo": {
+    "uid": "1d2054413b8bced030aedadf47b2304b"
+  },
+  "targets": {
+    "TOUCH": {
+      "excludeList": [],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "useCustomScatterFile": false,
+        "scatterFilePath": "<YOUR_SCATTER_FILE>.sct",
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x10000"
+              },
+              "isChecked": true,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x08000000",
+                "size": "0x80000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "STLink",
+      "uploadConfig": {
+        "bin": "",
+        "proType": "SWD",
+        "resetMode": "default",
+        "runAfterProgram": true,
+        "speed": 4000,
+        "address": "0x08000000",
+        "elFile": "None",
+        "optionBytes": ".eide/touch.st.option.bytes.ini",
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          ".",
+          "CORE",
+          "USER",
+          "SYSTEM/delay",
+          "SYSTEM/sys",
+          "SYSTEM/usart",
+          "HALLIB/STM32F1xx_HAL_Driver/Inc",
+          "HARDWARE/LED",
+          "HARDWARE/LCD",
+          "HARDWARE/KEY",
+          "HARDWARE/24CXX",
+          "HARDWARE/IIC",
+          "HARDWARE/SPI",
+          "HARDWARE/TOUCH",
+          "HARDWARE/W25QXX",
+          ".cmsis/include",
+          "USER/RTE/_TOUCH",
+          "HARDWARE/TIMER",
+          "App",
+          "App/lvgl",
+          "App/lvgl/examples/porting",
+          "App/lvgl/src"
+        ],
+        "libList": [],
+        "defineList": [
+          "USE_HAL_DRIVER",
+          "STM32F103xE",
+          "STM32F10X_HD"
+        ]
+      },
+      "builderOptions": {
+        "AC5": {
+          "version": 4,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "output-debug-info": "enable"
+          },
+          "c/cpp-compiler": {
+            "optimization": "level-0",
+            "one-elf-section-per-function": true,
+            "c99-mode": true,
+            "C_FLAGS": "--diag_suppress=1 --diag_suppress=68,111,118,223,546,1295",
+            "CXX_FLAGS": "--diag_suppress=1 --diag_suppress=68,111,118,223,546,1295",
+            "warnings": "all-warnings"
+          },
+          "asm-compiler": {},
+          "linker": {
+            "output-format": "elf",
+            "ro-base": "0x08000000",
+            "rw-base": "0x20000000"
+          }
+        },
+        "GCC": {
+          "version": 5,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "$float-abi-type": "softfp",
+            "output-debug-info": "enable",
+            "misc-control": "--specs=nosys.specs --specs=nano.specs"
+          },
+          "c/cpp-compiler": {
+            "language-c": "c11",
+            "language-cpp": "c++11",
+            "optimization": "level-debug",
+            "warnings": "all-warnings",
+            "one-elf-section-per-function": true,
+            "one-elf-section-per-data": true,
+            "C_FLAGS": "",
+            "CXX_FLAGS": ""
+          },
+          "asm-compiler": {
+            "ASM_FLAGS": ""
+          },
+          "linker": {
+            "output-format": "elf",
+            "remove-unused-input-sections": true,
+            "LD_FLAGS": "",
+            "LIB_FLAGS": "-lm"
+          }
+        }
+      }
+    }
+  },
+  "version": "3.5"
+}
