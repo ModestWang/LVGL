@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    "native,Version=v0.0": {},
+    "native,Version=v0.0/win": {},
+    "native,Version=v0.0/win-arm": {},
+    "native,Version=v0.0/win-arm64": {},
+    "native,Version=v0.0/win-x64": {},
+    "native,Version=v0.0/win-x86": {},
+    "native,Version=v0.0/win10-arm": {},
+    "native,Version=v0.0/win10-arm64": {},
+    "native,Version=v0.0/win10-x64": {},
+    "native,Version=v0.0/win10-x86": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "native,Version=v0.0": [
+      "VC-LTL >= 5.0.5"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\weidong\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Code\\Hardware\\LVGL8.3\\vs_sim\\LVGL.Simulator\\LVGL.Simulator.vcxproj",
+      "projectName": "LVGL.Simulator",
+      "projectPath": "C:\\Code\\Hardware\\LVGL8.3\\vs_sim\\LVGL.Simulator\\LVGL.Simulator.vcxproj",
+      "packagesPath": "C:\\Users\\weidong\\.nuget\\packages\\",
+      "outputPath": "C:\\Code\\Hardware\\LVGL8.3\\vs_sim\\Output\\Objects\\Debug\\LVGL.Simulator\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\weidong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "native"
+      ],
+      "sources": {
+        "C:\\App\\Dev\\vcpkg": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.cdn.azure.cn/v3/index.json": {}
+      },
+      "frameworks": {
+        "native": {
+          "projectReferences": {}
+        }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "native": {
+        "dependencies": {
+          "VC-LTL": {
+            "target": "Package",
+            "version": "[5.0.5, )"
+          }
+        },
+        "imports": [
+          "native",
+          "uap"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-arm": {
+        "#import": []
+      },
+      "win-arm64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      },
+      "win10-arm": {
+        "#import": []
+      },
+      "win10-arm64": {
+        "#import": []
+      },
+      "win10-x64": {
+        "#import": []
+      },
+      "win10-x86": {
+        "#import": []
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "本地源“C:\\App\\Dev\\vcpkg”不存在。",
+      "libraryId": "VC-LTL"
+    }
+  ]
+}

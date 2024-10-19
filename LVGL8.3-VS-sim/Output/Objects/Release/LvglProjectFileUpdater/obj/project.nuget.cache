@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "9ruOTmbNhmM=",
+  "success": false,
+  "projectFilePath": "C:\\Code\\Hardware\\LVGL8.3\\vs_sim\\LvglProjectFileUpdater\\LvglProjectFileUpdater.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "本地源“C:\\App\\Dev\\vcpkg”不存在。",
+      "libraryId": "Microsoft.Build"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "本地源“C:\\App\\Dev\\vcpkg”不存在。",
+      "libraryId": "Mile.Project.Helpers"
+    }
+  ]
+}
